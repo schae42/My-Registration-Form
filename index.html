@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Registration Form</title>
+    <style>
+            table,tr,th {
+                border: 1px none;
+            }
+            table {
+                width: 200px;
+            }
+            label {
+                white-space: nowrap;
+            }
+    </style>
+    </head>
+    
+    <body>
+    <h1>My Registration Form</h1>
+    <table>
+            <tr>
+               <th><label for="first_name">First Name:</label></th>
+                <th><input type="text" id="first_name" name="first_name"></th>
+            </tr>
+            <tr>
+                <th><label for="last_name">Last Name:</label></th>
+                <th><input type="text" id="last_name" name="last_name"></th>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <th><input type="text" id="email" name="email"></th>
+            </tr>
+            <tr>
+                <th><label for="password">Password</label></th>
+                <th><input type="password" id="password" name="password"></th>
+            </tr>
+            <tr>
+                <th><label for="password_confirm">PW Confirm</label></th>
+                <th><input type="password" id="password_confirm" name="password_confirm"></th>
+            </tr>
+            <tr>
+                <th><label for="birthday">Birthday</label></th>
+                <th><input type="date" id="birthday" name="birthday"></th>
+            </tr>
+            <tr>
+                <th colspan="2"><label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+            
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            
+                <label for="decline">Other</label>
+                <input type="radio" id="decline" name="gender" value="decline"></th>
+            </tr>
+            <tr>
+                <th colspan="2"><label for="about_you">A short description about yourself</label> <br>
+                <textarea style="width:100%" id="about_you" name="about_you" rows="4 cols="50></textarea></th>
+            </tr>
+            <tr>
+                <th colspan="2"><label for="language">Favorite language</label>
+                <select name="language" id="language">
+                    <optgroup label="Programming language">
+                        <option value="javascript">javascript</option>
+                        <option value="html">HTML</option>
+                        <option value="python">Python</option>
+                    </optgroup>
+                </select></th>
+            </tr>
+                <th><input type="submit" value="Sumbit"></th>
+            </p>
+        </table>
+    </body>
+</html>
